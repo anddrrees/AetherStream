@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Because of external reasons, the service is able to do all its functions except the one that it requires most: playing music. This serves as a proof of concept for anyone and everyone.
+
 # AetherStream
 
 A minimal, headless Spotify Connect daemon for Windows, written in modern C++20.
