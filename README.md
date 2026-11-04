@@ -1,5 +1,5 @@
 > [!CAUTION]
-> Because of external reasons, the service is able to do all its functions except the one that it requires most: playing music. This serves as a proof of concept for anyone and everyone.
+> Because of external reasons, the service is able to do all its functions except the one that it requires most: playing music. This is left as a proof of concept for anyone and everyone.
 
 # AetherStream
 
@@ -9,6 +9,7 @@ A minimal, headless Spotify Connect daemon for Windows, written in modern C++20.
 
 ## Highlights
 
+- **Lightweight, as intended:** Built to stay locked in on your computer and take no resources (Testing showed 20MB of RAM used by the window + CLI, below 50 if music worked).
 - **Instant Zero-Setup Demo:** Pre-built standalone Windows 64-bit binaries in `bin/` ready to run out of the box (no compiler or DLL setup required).
 - **Embedded Spotify Connect Layer:** Full protocol implementation featuring session negotiation, ZeroConf / mDNS discovery, and Spirc playback handling powered by `cspot`.
 - **Lock-Free SPSC Ring Buffer:** Decoupled Vorbis decoder thread and WASAPI audio pump with zero locks, cache-line alignment (`alignas(64)`), and acquire/release atomic memory semantics.
